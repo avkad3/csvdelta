@@ -1,0 +1,5 @@
+place_id,name,category,rating,reviews,hours,website
+ChIJ001,Cafe Aroma,Cafe,4.6,851,08:00-23:00,https://cafearoma.example
+ChIJ002,Brew Bros,Cafe,4.1,343,09:00-21:00,
+ChIJ004,Tea Tales,Tea house,4.3,95,10:00-20:00,
+ChIJ005,Daily Grind,Coffee shop,4.7,60,07:30-18:00,https://dailygrind.example

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvdelta"
+dynamic = ["version"]
+description = "Diff two CSV snapshots by key column(s): added, removed and changed rows."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Aditya Vijay Kumar" }]
+keywords = ["csv", "diff", "data", "cli", "snapshot"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+csvdelta = "csvdelta.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "csvdelta.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
